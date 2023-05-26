@@ -10,7 +10,8 @@ import java.util.Optional;
 public interface StudentService {
 
     public Student save(Student student);
-    public Optional<Student> getOneById(Long id);
+    public Optional<Student> getOneById(int id);
     public List<Student> getAll();
-    public void delete(Long id);
+    public void delete(int id);
+    public List<Student> getOneByLastName(String lastName);
 }

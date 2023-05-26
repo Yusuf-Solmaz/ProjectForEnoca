@@ -25,7 +25,7 @@ public class UniversityServiceImp implements UniversityService {
     }
 
     @Override
-    public Optional<University> getOneById(Long id) {
+    public Optional<University> getOneById(int id) {
         return universityRepo.findById(id);
     }
 
@@ -35,7 +35,7 @@ public class UniversityServiceImp implements UniversityService {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(int id) {
         universityRepo.deleteById(id);
     }
 }

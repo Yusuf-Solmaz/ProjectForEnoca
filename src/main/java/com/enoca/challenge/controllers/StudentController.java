@@ -2,6 +2,7 @@ package com.enoca.challenge.controllers;
 
 import com.enoca.challenge.entities.Student;
 import com.enoca.challenge.services.StudentService;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +13,7 @@ import java.util.Optional;
 @RequestMapping("/api/students")
 public class StudentController {
 
-    private StudentService studentService;
+    private  StudentService studentService;
 
     @Autowired
     public StudentController(StudentService studentService) {
@@ -47,8 +48,8 @@ public class StudentController {
         return savedStudent;
     }
 
-    @GetMapping("/{lastName}")
-    public List<Student> getOneByLastName(@PathVariable String lastName){
-        return studentService.getOneByLastName(lastName);
+    @GetMapping("/getLastName/{last_name}")
+    public List<Student> getOneByLastName(@PathVariable String last_name){
+        return studentService.getOneByLastName(last_name);
     }
 }

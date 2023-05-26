@@ -11,12 +11,13 @@ import java.util.Optional;
 @RequestMapping("/api/universities")
 public class UniversityController {
 
-    private UniversityService universityService;
+    private  UniversityService universityService;
 
     @Autowired
     public UniversityController(UniversityService universityService) {
         this.universityService = universityService;
     }
+
 
     @GetMapping
     public List<University> getAll(){

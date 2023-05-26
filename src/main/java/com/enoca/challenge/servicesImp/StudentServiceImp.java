@@ -26,7 +26,7 @@ public class StudentServiceImp implements StudentService {
     }
 
     @Override
-    public Optional<Student> getOneById(Long id) {
+    public Optional<Student> getOneById(int id) {
         if (!studentRepo.existsById(id)){
             throw new RuntimeException("Böyle bir öğrenci yok.");
         }
@@ -40,7 +40,12 @@ public class StudentServiceImp implements StudentService {
 
 
     @Override
-    public void delete(Long id) {
+    public void delete(int id) {
         studentRepo.deleteById(id);
+    }
+
+    @Override
+    public List<Student> getOneByLastName(String lastName) {
+        return studentRepo.findByLastName(lastName);
     }
 }
