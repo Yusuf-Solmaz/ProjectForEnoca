@@ -10,8 +10,7 @@ import java.util.Optional;
 public interface UniversityService {
 
     public University save(University university);
-    public Optional<University> getOneById(int id);
+    public Optional<University> getOneById(Long id);
     public List<University> getAll();
-    public void update(University university);
-    public void delete(int id);
+    public void delete(Long id);
 }
