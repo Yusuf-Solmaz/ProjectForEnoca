@@ -1,13 +1,11 @@
-# Project For Enoca
-
 ## Project Structure 
 ![classes](https://github.com/Yusuf-Solmaz/ProjectForEnoca/assets/83172478/aeeb41a2-ad31-4b95-99be-5024d7deb49c)
 
-  - ** Entity klasöründe Databasede olan sınıflarımız bulunur. Öğretmen ve öğrenci oneToMany ilişkisi içerisindedir. **
-  - ** Repository kısmında JPA'ye bağlantı kuruldu. **
-  - ** Service (Interface) kısmında gerekli olan methodlar yazıldı. Implementasyonları ServiceImp kısmında kuruldu. **
-  - ** Controllerde requestler için gerekli olan methodlar oluşturuldu. ** 
-  - ** Temel requestlere JPA Repository yardımıylşa ulaşabiliyoruz. Ben burada bir query ekledim. Bu query'nin amacı soy isme göre kullanıcı verisini getirmek. **
+  - **Entity klasöründe Databasede olan sınıflarımız bulunur. Öğretmen ve öğrenci oneToMany ilişkisi içerisindedir.**
+  - **Repository kısmında JPA'ye bağlantı kuruldu.**
+  - **Service (Interface) kısmında gerekli olan methodlar yazıldı. Implementasyonları ServiceImp kısmında kuruldu.**
+  - **Controllerde requestler için gerekli olan methodlar oluşturuldu.** 
+  - **Temel requestlere JPA Repository yardımıylşa ulaşabiliyoruz. Ben burada bir query ekledim. Bu query'nin amacı soy isme göre kullanıcı verisini getirmek.**
 
 ![getLastNameQuerry](https://github.com/Yusuf-Solmaz/ProjectForEnoca/assets/83172478/bd261445-8791-4a38-85b3-b1bd1c8ab698)
 
